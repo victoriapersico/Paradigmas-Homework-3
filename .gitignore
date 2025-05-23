@@ -3,6 +3,8 @@
 *.out
 *.o
 */dale
+*.bin
+*/[A-Za-z]*
 
 # Ignorar archivos de depuración de macOS
 *.dSYM/
