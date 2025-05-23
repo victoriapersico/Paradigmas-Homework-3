@@ -8,7 +8,7 @@
 
 # Ignorar archivos de depuración de macOS
 *.dSYM/
-*/.DS_Store
+*.DS_Store
 
 # Ignorar archivos de texto
 *.txt
