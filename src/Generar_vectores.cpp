@@ -3,11 +3,13 @@
 
 #include "../headers/Generar_vectores.hpp"
 
+//agrega un valor al vector de cada instancia de Generar_vectores<T>
 template <typename T>
 void Generar_vectores<T>::agregar_valor(const T& value){
     data.push_back(value);
 }
-
+//procesa los datos según su tipo y los imprime siguiendo el formato JSON
+//usando if constexpr determina en tiempo de compilación el tipo de T
 template <typename T>
 void Generar_vectores<T>::procesar(const string& etiqueta) const{
     if constexpr (is_same_v<T, vector<int>>){
